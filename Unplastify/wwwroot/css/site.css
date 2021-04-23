@@ -82,7 +82,9 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  scroll-behavior: smooth;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
