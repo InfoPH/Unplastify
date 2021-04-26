@@ -5,14 +5,17 @@
     {
       "library": "mdb-ui-kit@3.5.0",
       "destination": "wwwroot/lib/mdb-ui-kit/"
+    },
+    {
+      "library": "font-awesome@5.15.3",
+      "destination": "wwwroot/lib/font-awesome/",
+      "files": [
+        "css/all.min.css"
+      ]
+    },
+    {
+      "library": "animate.css@4.1.1",
+      "destination": "wwwroot/lib/animate.css/"
     }
-  ,
-{
-  "library": "font-awesome@5.15.3",
-  "destination": "wwwroot/lib/font-awesome/",
-  "files": [
-    "css/all.min.css"
   ]
-}
-]
 }
