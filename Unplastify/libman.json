@@ -3,8 +3,16 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "twitter-bootstrap@5.0.0-beta3",
-      "destination": "wwwroot/lib/twitter-bootstrap/"
+      "library": "mdb-ui-kit@3.5.0",
+      "destination": "wwwroot/lib/mdb-ui-kit/"
     }
+  ,
+{
+  "library": "font-awesome@5.15.3",
+  "destination": "wwwroot/lib/font-awesome/",
+  "files": [
+    "css/all.min.css"
   ]
+}
+]
 }
