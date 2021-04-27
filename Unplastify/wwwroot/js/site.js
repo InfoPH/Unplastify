@@ -18,8 +18,35 @@ document.addEventListener('DOMContentLoaded', function () {
     // If element is scrolled into view, fade it in
     window.addEventListener('scroll', function () {
         document.querySelectorAll('.animate__animated').forEach(function (element, index) {
+
             if (isScrolledIntoView(element) === true) {
-                element.classList.add('animate__fadeInUp');
+                switch (element.id) {
+                    case "whatArePlastics":
+                        {
+                            element.classList.add('animate__fadeInUp');
+                        }
+                        break;
+                    case "whatArePlasticsDesc":
+                        {
+                            element.classList.add('animate__fadeInUp');
+                        }
+                        break;
+                    case "card1":
+                        {
+                            element.classList.add('animate__fadeInUp');
+                        }
+                        break;
+                    case "card2":
+                        {
+                            element.classList.add('animate__fadeInUp');
+                        }
+                        break;
+                    case "card3":
+                        {
+                            element.classList.add('animate__fadeInUp');
+                        }
+                        break;
+                }
             }
         });
     });
