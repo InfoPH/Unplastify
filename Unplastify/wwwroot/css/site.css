@@ -23,3 +23,7 @@ body {
   scroll-behavior: smooth;
   font-family: Manrope;
 }
+
+.card-font-color {
+    color: #095C78;
+}
