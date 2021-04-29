@@ -14,10 +14,6 @@
       ]
     },
     {
-      "library": "animate.css@4.1.1",
-      "destination": "wwwroot/lib/animate.css/"
-    },
-    {
       "library": "ScrollMagic@2.0.8",
       "destination": "wwwroot/lib/ScrollMagic/"
     },

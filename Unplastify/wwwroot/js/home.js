@@ -44,14 +44,27 @@ document.addEventListener('DOMContentLoaded',
             geochart.draw(data, options);
         };
 
-        // ScrollMagic scenes
+
+        // Landing page animation
+        gsap.timeline()
+            .from('#motto-line-1', { duration: 0.8, x: -30, opacity: 0 })
+            .from('#motto-line-2', { duration: 0.8, x: 30, opacity: 0 })
+            .from('#motto-description', { duration: 0.8, y: 15, opacity: 0 });
+
+        /**
+         * ScrollMagic scenes
+         */
         new window.ScrollMagic.Scene({
             triggerElement: '.card',
             triggerHook: 0.75
         })
-            .setTween(gsap.from('.card', { duration: 0.6, y: -15, opacity: 0, stagger: 0.6 }))
+            .setTween(
+                gsap.timeline()
+                    .from('.card', { duration: 0.6, y: -15, opacity: 0, stagger: 0.6 })
+            )
             .addIndicators()
             .addTo(controller);
+
         new window.ScrollMagic.Scene({
             duration: '100%',
             triggerElement: '#philBg',
@@ -61,6 +74,7 @@ document.addEventListener('DOMContentLoaded',
             .setPin('#philBg')
             .addIndicators()
             .addTo(controller);
+
         new window.ScrollMagic.Scene({
             duration: '100%',
             triggerElement: '#its-everywhere',
