@@ -13,8 +13,7 @@
 }
 
 #action_intro_title {
-    margin-top: 15vh;
-    color: #42ABC5;
+    margin-top: 10vh;
 }
 
 .action_intro_txt {
@@ -54,7 +53,7 @@
 /* Height for devices larger than 576px */
 @media (min-width: 992px) {
     #action-intro {
-        margin-top: 20px;
+        margin-top: -58.59px;
     }
 }
 
