@@ -8,6 +8,91 @@
     height: 100vh;
 }
 
-.navbar .nav-link {
+#navbar .nav-link {
     color: #fff !important;
+}
+
+
+#action-intro{
+}
+
+#action_intro_title {
+    margin-top: 15vh;
+    font-weight: bold;
+}
+
+.action_intro_txt {
+    font-size: xx-large;
+}
+
+#action_info_title {
+    font-weight: bold;
+}
+
+#action_info_txt {
+   
+}
+
+#action_row {
+    margin: 0px 40px 40px 0px;
+}
+#ccc_info {
+}
+#ccc_title {
+}
+#ccc_title_info {
+}
+
+#action_info_img {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+#ccc_logo {
+    max-height: 400px;
+    max-width: 400px;
+    align-content: center;
+    margin-top: 20px
+}
+#ccc_logo_name {
+}
+#ccc_logo_info {
+}
+
+/* Height for devices larger than 576px */
+@media (min-width: 992px) {
+    #action-intro {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    #ccc_logo {
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+    #action_info_txt {
+        font-size: small;
+        text-align: center;
+    }
+
+    #action_intro_title {
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    #action_intro_txt {
+        font-size: small;
+        text-align: center;
+    }
+
+    #action_info_img {
+        max-height: 300px;
+        max-width: 300px;
+    }
+    #action-info {
+        display: flex;
+        align-content: center;
+    }
 }
