@@ -20,16 +20,10 @@
     {
       "library": "ScrollMagic@2.0.8",
       "destination": "wwwroot/lib/ScrollMagic/"
+    },
+    {
+      "library": "gsap@3.6.1",
+      "destination": "wwwroot/lib/gsap/"
     }
-  ,
-{
-  "library": "velocity@2.0.6",
-  "destination": "wwwroot/lib/velocity/"
-}
-,
-{
-  "library": "gsap@3.6.1",
-  "destination": "wwwroot/lib/gsap/"
-}
-]
+  ]
 }
