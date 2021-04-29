@@ -9,18 +9,19 @@
 
 @section Scripts
 {
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script src="js/home.js"></script>
 }
 
 <!--What Are Plastics-->
 <div id="plastics" class="container pt-5">
     <section class="text-center">
-        <h2 id="whatArePlastics" class="animate__animated display-4" style="color: #42ABC5;">What are plastics?</h2>
-        <p id="whatArePlasticsDesc" class="mt-4 mb-5 h5 animate__animated" style="color: rgba(9, 92, 120, 1);">It is a material widely used in our daily lives. The word “plastics” refers to the wide range of materials its made of, specifically polymers.</p>
+        <h2 id="whatArePlastics" class="display-4" style="color: #42ABC5;">What are plastics?</h2>
+        <p id="whatArePlasticsDesc" class="mt-4 mb-5 h5 animate__animated plastic-card" style="color: rgba(9, 92, 120, 1);">It is a material widely used in our daily lives. The word “plastics” refers to the wide range of materials its made of, specifically polymers.</p>
 
         <div class="row mb-5">
             <div class="col-lg-4 col-md-12 mb-4">
-                <div id="card1" class="card card-font-color animate__animated" style="background-color: #71C1BA;">
+                <div class="card card-font-color plastic-card" style="background-color: #71C1BA;">
                     <div class="bg-image" data-mdb-ripple-color="light">
                         <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
                     </div>
@@ -34,7 +35,7 @@
             </div>
 
             <div class="col-lg-4 col-md-12 mb-4">
-                <div id="card2" class="card card-font-color animate__animated" style="background-color: #71C1BA;">
+                <div class="card card-font-color plastic-card" style="background-color: #71C1BA;">
                     <div class="bg-image" data-mdb-ripple-color="light">
                         <img src="https://mdbootstrap.com/img/new/standard/nature/023.jpg" class="img-fluid" />
                     </div>
@@ -48,7 +49,7 @@
             </div>
 
             <div class="col-lg-4 col-md-12 mb-4">
-                <div id="card3" class="card card-font-color animate__animated" style="background-color: #71C1BA;">
+                <div class="card card-font-color plastic-card" style="background-color: #71C1BA;">
                     <div class="bg-image" data-mdb-ripple-color="light">
                         <img src="https://mdbootstrap.com/img/new/standard/nature/111.jpg" class="img-fluid" />
                     </div>
@@ -244,9 +245,8 @@
                 </tbody>
             </table>
         </div>
-        <div id="philHeatmapPic" class="vh-100 bg-image col-lg-6 col-sm-12">
-            <div id="philHeatmapMask" class="mask"></div>
-        </div>
+        <!--Google Geocharts Heatmap goes here-->
+        <div id="philHeatmapPic" class="vh-100 bg-image col-lg-6 col-sm-12"> </div>
     </div>
 </div>
 
