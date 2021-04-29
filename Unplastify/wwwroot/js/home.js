@@ -81,16 +81,6 @@ document.addEventListener("DOMContentLoaded",
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
-            duration: "100%",
-            triggerElement: "#philBg",
-            triggerHook: 0
-        })
-            .setTween(gsap.to("#philBg h1", { color: "white", backgroundColor: "black" }))
-            .setPin("#philBg")
-            .addIndicators()
-            .addTo(controller);
-
-        new window.ScrollMagic.Scene({
             triggerElement: "#co2Emission h1",
             triggerHook: 0.75
         })
@@ -107,6 +97,36 @@ document.addEventListener("DOMContentLoaded",
             .setTween(
                 gsap.from("#co2-data h1, #co2-data p", { duration: 0.6, y: 30, opacity: 0, stagger: 0.6 })
             )
+            .addIndicators()
+            .addTo(controller);
+
+        let video = document.querySelector("#co2-data video");
+        let videoScene = new window.ScrollMagic.Scene({
+            duration: 5000,
+            triggerElement: "#co2-data",
+            triggerHook: 0
+        })
+            .setTween(
+                gsap.to(video, { currentTime: video.duration })
+            )
+            .setPin("#co2-data")
+            .addIndicators()
+            .addTo(controller);
+
+        videoScene.on("update",
+            e => {
+                // TODO: Inaccurate and buggy!
+                video.currentTime = (e.scrollPos / 10000) - .5;
+
+            });
+
+        new window.ScrollMagic.Scene({
+            duration: "100%",
+            triggerElement: "#philBg",
+            triggerHook: 0
+        })
+            .setTween(gsap.to("#philBg h1", { color: "white", backgroundColor: "black" }))
+            .setPin("#philBg")
             .addIndicators()
             .addTo(controller);
 
@@ -208,7 +228,7 @@ document.addEventListener("DOMContentLoaded",
                     .to("#outro2", { duration: 1, opacity: 0 })
                     .from("#outro3", { duration: 1, opacity: 0 })
                     .to("#outro3", { duration: 1, opacity: 0 })
-                    .to("#outro *", {duration: 1, opacity: 1})
+                    .to("#outro *", { duration: 1, opacity: 1 })
             )
             .setPin("#outro")
             .addIndicators()
