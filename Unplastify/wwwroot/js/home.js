@@ -1,11 +1,11 @@
 ﻿// Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling (Made to vanilla js)
 document.addEventListener('DOMContentLoaded', function () {
     function isScrolledIntoView(el) {
-        var rect = el.getBoundingClientRect();
-        var elemTop = rect.top;
-        var elemBottom = rect.bottom;
+        let rect = el.getBoundingClientRect();
+        let elemTop = rect.top;
+        let elemBottom = rect.bottom;
 
-        var isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+        let isVisible = elemTop < window.innerHeight && elemBottom >= 0;
         return isVisible;
     }
 
@@ -44,4 +44,21 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    const philBg = document.querySelector('#philBg');
+
+    const controller = new ScrollMagic.Controller();
+
+    const tween = gsap.to('#philBg h1', { duration: 0.6, color: 'white', backgroundColor: 'black' });
+
+    const scene = new ScrollMagic.Scene({
+        duration: '100%',
+        triggerElement: philBg,
+        triggerHook: 0
+    })
+        .setTween(tween)
+        .setPin(philBg)
+        .addIndicators()
+        .addTo(controller);
+
 })

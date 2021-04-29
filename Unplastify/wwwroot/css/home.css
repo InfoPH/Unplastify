@@ -10,7 +10,7 @@
     background-image: url("/images/actionvance-t7EL2iG3jMc-unsplash.jpg");
 }
 
-#philAve, #philNoBg, #philStat, #philHeatmap {
+#philAve, #philStat, #philHeatmap {
     background-color: black;
 }
 
@@ -46,8 +46,15 @@
     background: #00443E;
 }
 
-#philBigBg {
+#philBg {
     background-image: url("/images/eibner-saliba-3T9dDY0WqDI-unsplash.jpg");
+}
+
+#philBg h1 {
+    mix-blend-mode: multiply;
+    color: black;
+    background-color: white;
+    line-height: 100vh;
 }
 
 #philAveMask, #philHeatmapMask {
