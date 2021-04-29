@@ -1,0 +1,13 @@
+﻿#action-intro {
+    background-image: url(/images/nick-fewings--2lJGRIY5P0-unsplash.jpg);
+    height: 100vh;
+}
+
+#action-info {
+    background-color: white;
+    height: 100vh;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+}
