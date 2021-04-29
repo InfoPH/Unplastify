@@ -7,66 +7,54 @@
     <style>
         #intro {
             background-image: url(@Url.Content("~/images/brian-yurasits-y8k-dMPNWNI-unsplash.jpg"));
-            height: 100vh;
         }
 
         #singleUse {
             background-image: url(@Url.Content("~/images/brian-yurasits-jVXgfjSDnJI-unsplash.jpg"));
-            height: 100vh;
         }
 
         #co2Emission {
             background-image: url(@Url.Content("~/images/actionvance-t7EL2iG3jMc-unsplash.jpg"));
-            height: 100vh;
         }
 
-        #philAve {
+        #philAve, #philNoBg, #philStat, #philHeatmap {
             background-color: black;
-            height: 100vh;
         }
-        #philAvePic {
+
+        #philAvePic, #philHeatmapPic {
             background-image: url(@Url.Content("~/images/jasmin-sessler-5Wfttm2CjeI-unsplash.jpg"));
-            height: 100vh;
         }
         #barangays {
             background-image: url(@Url.Content("~/images/lindbergh-paimalan-UkaakMEZf68-unsplash.jpg"));
-            height: 100vh;
         }
         #swm {
             background-image: url(@Url.Content("~/images/alfonso-navarro-qph7tJfcDys-unsplash.jpg"));
-            height: 100vh;
         }
         #swmBudget {
             background-image: url(@Url.Content("~/images/julian-paolo-dayag-A1ruaOXLJMg-unsplash.jpg"));
-            height: 100vh;
         }
 
         #ra9003 {
             background-image: url(@Url.Content("~/images/bill-oxford-OXGhu60NwxU-unsplash.jpg"));
-            height: 100vh;
         }
 
         #outro {
             background-color: black;
-            height: 100vh;
         }
 
         #everywhere {
             background: #00443E;
-            height: 100vh;
         }
 
         #everywhere2 {
             background: #00443E;
-            height: 100vh;
         }
 
         #philBigBg {
             background-image: url(@Url.Content("~/images/eibner-saliba-3T9dDY0WqDI-unsplash.jpg"));
-            height: 100vh;
         }
 
-        #philAveMask {
+        #philAveMask, #philHeatmapMask {
             background: linear-gradient(270deg, #000000 3.65%, rgba(255, 255, 255, 0) 100%);
         }
 
@@ -178,7 +166,7 @@
 </div>
 
 <!--Single Use Plastics-->
-<div id="singleUse" class="bg-image mt-5">
+<div id="singleUse" class="vh-100 bg-image mt-5">
     <div class="mask" style="background: linear-gradient(180deg, rgba(0, 146, 132, 0) 0%, #00443E 100%), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 68, 62, 0.5) 100%), linear-gradient(180deg, #FFFFFF 4.69%, rgba(255, 255, 255, 0) 67.71%);">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="text-white">
@@ -189,7 +177,7 @@
 </div>
 
 <!--It's Everywhere 1-->
-<div id="everywhere" class="bg-image">
+<div id="everywhere" class="vh-100 bg-image">
     <div class="mask">
         <div class="container d-flex justify-content-center text-center h-100">
             <div class="text-white">
@@ -218,7 +206,7 @@
 </div>
 
 <!--It's Everywhere 2-->
-<div id="everywhere2" class="bg-image">
+<div id="everywhere2" class="vh-100 bg-image">
     <div class="mask">
         <div class="container d-flex justify-content-center text-center h-100">
             <div class="text-white">
@@ -244,7 +232,7 @@
 </div>
 
 <!--Plastic Data-->
-<div id="co2Emission" class="bg-image mt-5">
+<div id="co2Emission" class="vh-100 bg-image mt-5">
     <div class="mask">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="text-white">
@@ -266,7 +254,7 @@
 </div>
 
 <!--Philippines BIG BG-->
-<div id="philBigBg" class="bg-image">
+<div id="philBigBg" class="vh-100 bg-image">
     <div class="mask">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="text-white">
@@ -277,7 +265,7 @@
 </div>
 
 <!--Philippines NO BG-->
-<div id="philAve" class="bg-image">
+<div id="philNoBg" class="vh-100 bg-image">
     <div class="mask">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="text-white">
@@ -288,9 +276,9 @@
 </div>
 
 <!--Philippines Average-->
-<div id="philAve" class="container-fluid mt-1">
+<div id="philAve" class="vh-100 container-fluid mt-1">
     <div class="row">
-        <div id="philAvePic" class="bg-image col-lg-6 col-sm-12">
+        <div id="philAvePic" class="vh-100 bg-image col-lg-6 col-sm-12">
             <div id="philAveMask" class="mask"></div>
         </div>
         <div class="col-lg-6 col-sm-12 text-lg-start text-sm-center text-white align-content-center">
@@ -313,7 +301,7 @@
 </div>
 
 <!--Ph Stat-->
-<div id="philAve" class="card-group" style="display:flex; justify-content:center; align-content:center;">
+<div id="philStat" class="vh-100 card-group" style="display:flex; justify-content:center; align-content:center;">
     <div class="card" style="margin-top:2vh; max-width:20vw;">
         <img src="~/images/markus-spiske-itAJUJlNmdE-unsplash.jpg" class="card-img-top img-fluid" alt="card-group-image" style="width:25vw;height:25vh;">
         <div class="card-body" style="background-color: black">
@@ -341,7 +329,7 @@
 </div>
 
 <!--Philippine Barangays-->
-<div id="barangays" class="bg-image mt-5">
+<div id="barangays" class="vh-100 bg-image mt-5">
     <div class="mask" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="text-white display-2 font-weight-bold">
@@ -358,7 +346,7 @@
 </div>
 
 <!--Philippine Heatmap-->
-<div id="philAve" class="container-fluid mt-1">
+<div id="philHeatmap" class="vh-100 container-fluid mt-1">
     <div class="row">
         <div class="col-lg-6 col-sm-12 text-lg-start text-sm-center text-white align-content-center">
             <table>
@@ -374,14 +362,14 @@
                 </tbody>
             </table>
         </div>
-        <div id="philAvePic" class="bg-image col-lg-6 col-sm-12">
-            <div id="philAveMask" class="mask"></div>
+        <div id="philHeatmapPic" class="vh-100 bg-image col-lg-6 col-sm-12">
+            <div id="philHeatmapMask" class="mask"></div>
         </div>
     </div>
 </div>
 
 <!--Philippine SWM-->
-<div id="swm" class="bg-image mt-5">
+<div id="swm" class="vh-100 bg-image mt-5">
     <div class="mask" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="row">
@@ -399,7 +387,7 @@
 </div>
 
 <!--Philippine SWM Budget-->
-<div id="swmBudget" class="bg-image">
+<div id="swmBudget" class="vh-100 bg-image">
     <div class="mask" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="row">
@@ -417,7 +405,7 @@
 </div>
 
 <!--RA9003-->
-<div id="ra9003" class="bg-image">
+<div id="ra9003" class="vh-100 bg-image">
     <div class="mask" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 17.71%, #000000 80.73%), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));">
         <div class="container d-flex align-items-center justify-content-center text-center h-100">
             <div class="row">
@@ -435,7 +423,7 @@
 </div>
 
 <!--PH Outro-->
-<div id="outro" class="bg-image">
+<div id="outro" class="vh-100 bg-image">
     <div class="container text-center display-5 text-white">The sheer volume of residual waste is beyond the control of LGUs</div>
     <div class="container-fluid d-flex align-items-center justify-content-center text-center h-100">
         <div class="row">
