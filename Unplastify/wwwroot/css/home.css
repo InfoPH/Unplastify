@@ -40,6 +40,7 @@
 
 #everywhere {
     background: #00443E;
+    height: 100vh;
 }
 
 #everywhere2 {
@@ -54,9 +55,24 @@
     background: linear-gradient(270deg, #000000 3.65%, rgba(255, 255, 255, 0) 100%);
 }
 
+#stat2 {
+    margin-top: 10vh;
+}
+
+#stat3 {
+    margin-top: 20vh;
+}
+
+#stat4 {
+    margin-top: 30vh;
+}
+
 .black-on-white {
     background-color: white;
     color: black;
+}
+.row-no-padding {
+    margin-right: -24px !important;
 }
 /* Height for devices larger than 576px */
 @media (min-width: 992px) {
@@ -89,6 +105,7 @@
     table {
         height: 100vh;
     }
+
 }
 
 @media (max-width: 992px) {
@@ -109,8 +126,12 @@
         background: linear-gradient(0deg, #000000 3.65%, rgba(255, 255, 255, 0) 100%);
     }
 
-    #everywhere {
+    #everywhere, #philStat {
         height: 175vh;
+    }
+
+    #stat1, #stat2, #stat3, #stat4 {
+        margin-top: 0vh;
     }
 }
 
