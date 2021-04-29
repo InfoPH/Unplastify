@@ -21,5 +21,10 @@
       "library": "ScrollMagic@2.0.8",
       "destination": "wwwroot/lib/ScrollMagic/"
     }
-  ]
+  ,
+{
+  "library": "velocity@2.0.6",
+  "destination": "wwwroot/lib/velocity/"
+}
+]
 }
