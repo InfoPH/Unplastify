@@ -116,7 +116,7 @@
 }
 
 @media (max-width: 992px) {
-    #philAvePic {
+    #philAvePic, #philHeatmapPic{
         height: 50vh;
     }
 
