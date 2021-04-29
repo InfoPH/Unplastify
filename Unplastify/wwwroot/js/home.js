@@ -1,6 +1,5 @@
 ﻿const controller = new window.ScrollMagic.Controller();
 
-// Scroll function courtesy of Scott Dowding; http://stackoverflow.com/questions/487073/check-if-element-is-visible-after-scrolling (Made to vanilla js)
 document.addEventListener('DOMContentLoaded',
     () => {
         window.google.load('visualization', '1', { 'packages': ['geochart'] });
@@ -45,20 +44,34 @@ document.addEventListener('DOMContentLoaded',
             geochart.draw(data, options);
         };
 
-        gsap.from('.plastic-card', { duration: 0.6, y: -15, opacity: 0, stagger: 0.6 });
-
-        const philBg = document.querySelector('#philBg');
-
-        const tween = gsap.to('#philBg h1', { duration: 0.6, color: 'white', backgroundColor: 'black' });
-
+        // ScrollMagic scenes
         new window.ScrollMagic.Scene({
-            duration: '100%',
-            triggerElement: philBg,
-            triggerHook: 0
+            triggerElement: '.card',
+            triggerHook: 0.75
         })
-            .setTween(tween)
-            .setPin(philBg)
+            .setTween(gsap.from('.card', { duration: 0.6, y: -15, opacity: 0, stagger: 0.6 }))
             .addIndicators()
             .addTo(controller);
-
+        new window.ScrollMagic.Scene({
+            duration: '100%',
+            triggerElement: '#philBg',
+            triggerHook: 0
+        })
+            .setTween(gsap.to('#philBg h1', { color: 'white', backgroundColor: 'black' }))
+            .setPin('#philBg')
+            .addIndicators()
+            .addTo(controller);
+        new window.ScrollMagic.Scene({
+            duration: '100%',
+            triggerElement: '#its-everywhere',
+            triggerHook: 0
+        })
+            .setTween(
+                gsap.timeline()
+                    .to('#its-everywhere-container', { duration: 1, xPercent: -20 }, 'label1')
+                    .from('#everywhere2', { duration: 0.5 }, 'label1+=0.5')
+            )
+            .setPin('#its-everywhere')
+            .addIndicators()
+            .addTo(controller);
     });
