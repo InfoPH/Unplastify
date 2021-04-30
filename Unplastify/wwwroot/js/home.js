@@ -101,24 +101,19 @@ document.addEventListener("DOMContentLoaded",
             .addTo(controller);
 
         let video = document.querySelector("#co2-data video");
-        let videoScene = new window.ScrollMagic.Scene({
-            duration: 5000,
+        new window.ScrollMagic.Scene({
+            duration: video.duration * 1000,
             triggerElement: "#co2-data",
-            triggerHook: 0
+            triggerHook: 0.25
         })
-            .setTween(
-                gsap.to(video, { currentTime: video.duration })
-            )
-            .setPin("#co2-data")
+            .on("enter", () => {
+                video.play();
+            })
+            .on("leave", () => {
+                video.pause();
+            })
             .addIndicators()
             .addTo(controller);
-
-        videoScene.on("update",
-            e => {
-                // TODO: Inaccurate and buggy!
-                video.currentTime = (e.scrollPos / 10000) - .5;
-
-            });
 
         new window.ScrollMagic.Scene({
             duration: "100%",
