@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded",
         })
             .setTween(
                 window.gsap.timeline()
-                    .from("#philHeatmap h1, #philHeatmap p", { duration: 0.6, y: 15, opacity: 0, stagger: 0.6 })
+                    .from("#philHeatmap h1, #philHeatmap h2", { duration: 0.6, y: 15, opacity: 0, stagger: 0.6 })
                     .from("#philHeatmapPic", { duration: 0.6, x: 30, opacity: 0 })
             )
             .addTo(controller);
