@@ -10,11 +10,11 @@
     background-image: url("/images/actionvance-t7EL2iG3jMc-unsplash.jpg");
 }
 
-#philAve, #philNoBg, #philStat, #philHeatmap {
+#philAve, #philStat, #philHeatmap {
     background-color: black;
 }
 
-#philAvePic, #philHeatmapPic {
+#philAvePic {
     background-image: url("/images/jasmin-sessler-5Wfttm2CjeI-unsplash.jpg");
 }
 
@@ -44,11 +44,18 @@
 }
 
 #everywhere2 {
-    background: #00443E;
+    background: #129184;
 }
 
-#philBigBg {
+#philBg {
     background-image: url("/images/eibner-saliba-3T9dDY0WqDI-unsplash.jpg");
+}
+
+#philBg h1 {
+    mix-blend-mode: multiply;
+    color: black;
+    background-color: white;
+    line-height: 100vh;
 }
 
 #philAveMask, #philHeatmapMask {
