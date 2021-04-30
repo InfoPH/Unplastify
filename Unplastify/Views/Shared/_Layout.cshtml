@@ -26,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="~/lib/mdb-ui-kit/mdb.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" href="~/images/Dark Mode_1.png" type="image/x-icon"/>
     <style>
         body {
             font-family: Manrope;
@@ -35,6 +36,11 @@
 </head>
 
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
     <!--Main Navigation-->
     <header>
         <!-- Navbar -->
@@ -50,12 +56,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex flex-row ms-auto text-nowrap">
-                        <li class="mx-3 nav-item active">
-                            <a class="nav-link" href="#plastics">What are Plastics</a>
-                        </li>
-                        <li class="mx-3 nav-item">
-                            <a class="nav-link" href="#philBigBg">Plastics in the Philippines</a>
-                        </li>
+                        @if (ViewContext.RouteData.Values["action"]?.ToString() == "Index")
+                        {
+                            <li class="mx-3 nav-item active">
+                                <a class="nav-link" href="#plastics">What are Plastics</a>
+                            </li>
+                            <li class="mx-3 nav-item">
+                                <a class="nav-link" href="#philBg">Plastics in the Philippines</a>
+                            </li>
+                        }
                         <li class="mx-3 nav-item">
                             <a class="nav-link" asp-controller="Home" asp-action="Action">Ways to help</a>
                         </li>
