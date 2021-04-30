@@ -1,5 +1,15 @@
 ﻿const controller = new window.ScrollMagic.Controller();
 
+window.addEventListener('load', function () {
+    document.querySelector('body').classList.add("loaded");
+
+    // Landing page animation
+    window.gsap.timeline()
+        .from("#motto-line-1", { duration: 0.8, x: -30, opacity: 0, delay: 0.5 })
+        .from("#motto-line-2", { duration: 0.8, x: 30, opacity: 0 })
+        .from("#motto-description", { duration: 0.8, y: 15, opacity: 0 });
+});
+
 document.addEventListener("DOMContentLoaded",
     () => {
         window.google.load("visualization", "1", { 'packages': ["geochart"] });
@@ -44,12 +54,6 @@ document.addEventListener("DOMContentLoaded",
             geochart.draw(data, options);
         };
 
-
-        // Landing page animation
-        window.gsap.timeline()
-            .from("#motto-line-1", { duration: 0.8, x: -30, opacity: 0 })
-            .from("#motto-line-2", { duration: 0.8, x: 30, opacity: 0 })
-            .from("#motto-description", { duration: 0.8, y: 15, opacity: 0 });
 
         /**
          * ScrollMagic scenes
