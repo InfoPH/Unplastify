@@ -4,11 +4,27 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Unplastify - Single Use, We Refuse</title>
+    <meta name="title" content="Unplastify - Single Use, We Refuse">
+    <meta name="description" content="@Url.Action("Index", "Home", null, ViewContext.HttpContext.Request.Scheme)">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="@Url.Action("Index", "Home", null, ViewContext.HttpContext.Request.Scheme)">
+    <meta property="og:title" content="Unplastify - Single Use, We Refuse">
+    <meta property="og:description" content="The change starts with you. A Single-Use Plastic Products Regulation Campaign">
+    <meta property="og:image" content="/images/meta-cover.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="@Url.Action("Index", "Home", null, ViewContext.HttpContext.Request.Scheme)">
+    <meta property="twitter:title" content="Unplastify - Single Use, We Refuse">
+    <meta property="twitter:description" content="The change starts with you. A Single-Use Plastic Products Regulation Campaign">
+    <meta property="twitter:image" content="/images/meta-cover.png">
+
     <title>@ViewData["Title"] - Unplastify</title>
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="~/lib/mdb-ui-kit/mdb.min.css" />
-    <link rel="stylesheet" href="~/lib/animate.css/animate.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <style>
         body {
@@ -26,7 +42,7 @@
             <div class="container-fluid">
                 <!-- Navbar brand -->
                 <a class="navbar-brand nav-link" asp-controller="Home" asp-action="Index">
-                    <img class="w-50" src="/images/brand-image.png" alt="brand" />
+                    <img class="w-50" src="/images/Logo.png" alt="brand" />
                 </a>
                 <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +72,7 @@
     <footer class="bg-light text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            &copy; 2021 - Unplastify - <a class="text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - Unplastify
         </div>
     </footer>
 
@@ -64,7 +80,6 @@
     <script src="lib/gsap/gsap.min.js"></script>
     <script src="lib/ScrollMagic/ScrollMagic.min.js"></script>
     <script src="lib/ScrollMagic/plugins/animation.gsap.min.js"></script>
-    <script src="lib/ScrollMagic/plugins/debug.addIndicators.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
