@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded",
 
 
         // Landing page animation
-        gsap.timeline()
+        window.gsap.timeline()
             .from("#motto-line-1", { duration: 0.8, x: -30, opacity: 0 })
             .from("#motto-line-2", { duration: 0.8, x: 30, opacity: 0 })
             .from("#motto-description", { duration: 0.8, y: 15, opacity: 0 });
@@ -59,11 +59,10 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.75
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .from("#whatArePlasticsDesc", { duration: 0.6, y: 15, opacity: 0 })
                     .from(".card", { duration: 0.6, y: 15, opacity: 0, stagger: 0.6 })
             )
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -72,12 +71,11 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .to("#its-everywhere-container", { duration: 1, xPercent: -20 }, "label1")
                     .from("#everywhere2", { duration: 0.5 }, "label1+=0.5")
             )
             .setPin("#its-everywhere")
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -85,9 +83,8 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.75
         })
             .setTween(
-                gsap.from("#co2Emission h1", { duration: 1.5, x: 30, opacity: 0 })
+                window.gsap.from("#co2Emission h1", { duration: 1.5, x: 30, opacity: 0 })
             )
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -95,9 +92,8 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.75
         })
             .setTween(
-                gsap.from("#co2-data h1, #co2-data p", { duration: 0.6, y: 30, opacity: 0, stagger: 0.6 })
+                window.gsap.from("#co2-data h1, #co2-data p", { duration: 0.6, y: 30, opacity: 0, stagger: 0.6 })
             )
-            .addIndicators()
             .addTo(controller);
 
         let video = document.querySelector("#co2-data video");
@@ -112,7 +108,6 @@ document.addEventListener("DOMContentLoaded",
             .on("leave", () => {
                 video.pause();
             })
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -120,9 +115,8 @@ document.addEventListener("DOMContentLoaded",
             triggerElement: "#philBg",
             triggerHook: 0
         })
-            .setTween(gsap.to("#philBg h1", { color: "white", backgroundColor: "black" }))
+            .setTween(window.gsap.to("#philBg h1", { color: "white", backgroundColor: "black" }))
             .setPin("#philBg")
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -130,11 +124,10 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.5
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .from("#philAveMask", { duration: 0.6, backgroundColor: 'black' })
                     .from("#philAve p, #philAve strong", { duration: 0.6, y: 30, opacity: 0, stagger: 0.2 })
             )
-            .addIndicators()
             .addTo(controller);
 
 
@@ -143,11 +136,10 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.25
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .from("#philStat .card img", { duration: 0.6, y: -100, opacity: 0, stagger: 0.4, ease: 'Bounce.easeOut' })
                     .from("#philStat .card p", { duration: 0.6, x: -15, opacity: 0, stagger: 0.25 })
             )
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -155,11 +147,11 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.25
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .from("#barangays .mask", { duration: 0.6, backgroundColor: 'black' })
                     .from("#barangays div.text-white *", { duration: 0.6, y: 15, opacity: 0, stagger: 0.25 })
             )
-            .addIndicators()
+
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -167,11 +159,10 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.25
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .from("#philHeatmap h1, #philHeatmap p", { duration: 0.6, y: 15, opacity: 0, stagger: 0.6 })
                     .from("#philHeatmapPic", { duration: 0.6, x: 30, opacity: 0 })
             )
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -179,11 +170,10 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.25
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .from("#swm .mask", { duration: 0.6, backgroundColor: 'black' })
                     .from("#swm div.text-white *", { duration: 0.6, y: 15, opacity: 0, stagger: 0.25 })
             )
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -191,11 +181,10 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.25
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .from("#swmBudget .mask", { duration: 0.6, backgroundColor: 'black' })
                     .from("#swmBudget div.text-white *", { duration: 0.6, y: 15, opacity: 0, stagger: 0.25 })
             )
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -203,11 +192,10 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0.25
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .from("#ra9003 .mask", { duration: 0.6, backgroundColor: 'black' })
                     .from("#ra9003 div.text-white *", { duration: 0.6, y: 15, opacity: 0, stagger: 0.25 })
             )
-            .addIndicators()
             .addTo(controller);
 
         new window.ScrollMagic.Scene({
@@ -216,7 +204,7 @@ document.addEventListener("DOMContentLoaded",
             triggerHook: 0
         })
             .setTween(
-                gsap.timeline()
+                window.gsap.timeline()
                     .from("#outro1", { duration: 1, opacity: 0 })
                     .to("#outro1", { duration: 1, opacity: 0 })
                     .from("#outro2", { duration: 1, opacity: 0 })
@@ -226,6 +214,5 @@ document.addEventListener("DOMContentLoaded",
                     .to("#outro *", { duration: 1, opacity: 1 })
             )
             .setPin("#outro")
-            .addIndicators()
             .addTo(controller);
     });
