@@ -50,9 +50,6 @@
     max-width: 500px;
 }
 
-.desc-color {
-    font-size: small;
-}
 
 /* Height for devices larger than 576px */
 @media (min-width: 992px) {
