@@ -9,7 +9,7 @@ jobs:
   get-pagespeed-results:
     runs-on: ubuntu-latest
     env:
-      HOST: https://unplastify.herokuapp.com/
+      HOST: https://infoph.github.io/Unplastify/
       PSURL: https://pagespeed-insights.herokuapp.com
       PSRDESKTOP: psresultdesktop
       PSRMOBILE: psresultmobile
