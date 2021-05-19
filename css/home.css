@@ -1,13 +1,13 @@
 ﻿#intro {
-    background-image: url("/images/brian-yurasits-y8k-dMPNWNI-unsplash.jpg");
+    background-image: url("../images/brian-yurasits-y8k-dMPNWNI-unsplash.jpg");
 }
 
 #singleUse {
-    background-image: url("/images/brian-yurasits-jVXgfjSDnJI-unsplash.jpg");
+    background-image: url("../images/brian-yurasits-jVXgfjSDnJI-unsplash.jpg");
 }
 
 #co2Emission {
-    background-image: url("/images/actionvance-t7EL2iG3jMc-unsplash.jpg");
+    background-image: url("../images/actionvance-t7EL2iG3jMc-unsplash.jpg");
 }
 
 #philAve, #philStat, #philHeatmap {
@@ -15,23 +15,23 @@
 }
 
 #philAvePic {
-    background-image: url("/images/jasmin-sessler-5Wfttm2CjeI-unsplash.jpg");
+    background-image: url("../images/jasmin-sessler-5Wfttm2CjeI-unsplash.jpg");
 }
 
 #barangays {
-    background-image: url("/images/lindbergh-paimalan-UkaakMEZf68-unsplash.jpg");
+    background-image: url("../images/lindbergh-paimalan-UkaakMEZf68-unsplash.jpg");
 }
 
 #swm {
-    background-image: url("/images/alfonso-navarro-qph7tJfcDys-unsplash.jpg");
+    background-image: url("../images/alfonso-navarro-qph7tJfcDys-unsplash.jpg");
 }
 
 #swmBudget {
-    background-image: url("/images/julian-paolo-dayag-A1ruaOXLJMg-unsplash.jpg");
+    background-image: url("../images/julian-paolo-dayag-A1ruaOXLJMg-unsplash.jpg");
 }
 
 #ra9003 {
-    background-image: url("/images/bill-oxford-OXGhu60NwxU-unsplash.jpg");
+    background-image: url("../images/bill-oxford-OXGhu60NwxU-unsplash.jpg");
 }
 
 #outro {
@@ -48,7 +48,7 @@
 }
 
 #philBg {
-    background-image: url("/images/eibner-saliba-3T9dDY0WqDI-unsplash.jpg");
+    background-image: url("../images/eibner-saliba-3T9dDY0WqDI-unsplash.jpg");
 }
 
 #philBg h1 {
